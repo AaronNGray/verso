@@ -5,6 +5,7 @@ on:
             - main
             - nightly-testing
     pull_request:
+    workflow_dispatch:
     merge_group:
 
 name: Continuous Integration
