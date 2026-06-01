@@ -12,7 +12,7 @@ name: Continuous Integration
 jobs:
     build:
         name: Build and test
-        runs-on: nscloud-ubuntu-22.04-amd64-8x16
+        runs-on: self-hosted
         env:
             # Used for browser tests. Placing them here allows caching to work right.
             PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.playwright-browsers
